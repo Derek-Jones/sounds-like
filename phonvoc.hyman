@@ -1,0 +1,60 @@
+#
+# phonvoc.Hyman 14 Mar 12
+#
+# Taken from "Phonoloy theory and analysis" by Larry M. Hyman
+# isbn 0-03-012141-8
+
+# CONSonant
+# VOCalic
+# DIFFuse
+# COMPact
+# GRAVE
+# FLAT
+# VOICE
+# CONTinuant
+# STRIdent
+# NASAL
+
+IY          VOC   DIFF                  VOICE   CONT
+IH          VOC                         VOICE   CONT
+EY          VOC   DIFF                  VOICE   CONT
+EH          VOC                         VOICE   CONT                  COMP
+AE          VOC                         VOICE   CONT                  COMP
+AA          VOC          GRAVE          VOICE   CONT                  COMP
+AO          VOC          GRAVE   FLAT   VOICE   CONT                  COMP
+UH          VOC                         VOICE   CONT
+OW          VOC          GRAVE   FLAT   VOICE   CONT
+UW          VOC   DIFF   GRAVE   FLAT   VOICE   CONT
+ER          VOC          GRAVE          VOICE   CONT
+AX          VOC                         VOICE   CONT
+AH          VOC                         VOICE   CONT
+AY          VOC   DIFF                  VOICE   CONT
+AW          VOC                         VOICE   CONT          NASAL
+OY          VOC   DIFF                  VOICE   CONT
+
+P    CONS         DIFF   GRAVE                      
+B    CONS         DIFF   GRAVE          VOICE       
+F    CONS         DIFF   GRAVE                  CONT   STRI
+V    CONS         DIFF   GRAVE          VOICE   CONT   STRI
+M    CONS         DIFF   GRAVE          VOICE                 NASAL
+T    CONS         DIFF                              
+D    CONS         DIFF                  VOICE       
+TH   CONS         DIFF                          CONT
+DH   CONS         DIFF                  VOICE   CONT
+S    CONS         DIFF                          CONT   STRI
+Z    CONS         DIFF                  VOICE   CONT   STRI
+N    CONS         DIFF                  VOICE                 NASAL
+CH   CONS                                              STRI
+JH   CONS                               VOICE          STRI
+SH   CONS                                       CONT   STRI
+ZH   CONS                               VOICE   CONT   STRI
+K    CONS                GRAVE                      
+G    CONS                GRAVE          VOICE       
+L    CONS   VOC   DIFF                  VOICE   CONT
+R    CONS   VOC   DIFF                  VOICE   CONT
+W                        GRAVE   FLAT   VOICE   CONT
+Y                                       VOICE   CONT
+HH                       GRAVE                  CONT
+
+NX   CONS                                           
+WH                       GRAVE   FLAT   VOICE   CONT

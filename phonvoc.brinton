@@ -1,0 +1,75 @@
+#
+# phonvoc.config 21 Mar 12
+#
+# Taken from "The Linguistic Structure of Modern English" second edition
+# by Laurel J. Brinton and Donna M. Brinton
+
+# Syllabic
+# Consonantal
+# Sonorant
+# Nasal
+# Anterior
+# Coronal
+# High
+# Back
+# Continuant
+# Delayed release
+# Sibilant
+# Voice
+# Lateral
+# Syll Cons Sono Nasa Ante Coro High Back Cont Dela Sibi Voic Late
+# Vocalic
+# Low
+# Back
+# Round
+# Tense
+# Reduced
+# Syll Voca Sono High Low Back Roun Tens Redu Cont Voic
+
+IY Syll Voca Sono High               Tens      Cont Voic
+IH Syll Voca Sono High                         Cont Voic
+EY      Voca Sono                    Tens      Cont Voic
+EH Syll Voca Sono                              Cont Voic
+AE Syll Voca Sono      Low                     Cont Voic
+AX Syll Voca Sono          Back           Redu Cont Voic
+AH Syll Voca Sono          Back                Cont Voic
+UW Syll Voca Sono High     Back Roun Tens      Cont Voic
+UH Syll Voca Sono High     Back Roun           Cont Voic
+A0 Syll Voca Sono          Back Roun Ten-      Cont Voic
+AA Syll Voca Sono      Low Back Roun Tens      Cont Voic
+
+# The followed created by DJ (ie, may be wrong)
+ER      Voca Sono High     Back                Cont Voic
+AY      Voca Sono High Low           Tens      Cont Voic
+AW      Voca Sono High Low Back      Tens      Cont Voic
+OY      Voca Sono High     Back      Tens      Cont Voic
+OW      Voca Sono          Back Roun Tens      Cont Voic
+
+
+P       Cons           Ante                                        
+B       Cons           Ante                               Voic     
+M  Syl- Cons Sono Nasa Ante                               Voic     
+T       Cons           Ante Coro                                   
+D       Cons           Ante Coro                          Voic     
+N  Syl- Cons Sono Nasa Ante Coro                          Voic     
+K       Cons                     High Back                         
+G       Cons                     High Back                Voic     
+NX Syl- Cons Sono Nasa           High Back                Voic     
+F       Cons           Ante                Cont                    
+V       Cons           Ante                Cont           Voic     
+S       Cons           Ante Coro           Cont      Sibi          
+Z       Cons           Ante Coro           Cont      Sibi Voic     
+TH      Cons           Ante Coro           Cont                    
+DH      Cons           Ante Coro           Cont           Voic     
+SH      Cons                Coro           Cont      Sibi          
+ZH      Cons                Coro           Cont      Sibi Voic     
+CH      Cons                Coro                Dela Sibi          
+JH      Cons                Coro                Dela Sibi Voic     
+L  Syl- Cons Sono      Ante Coro           Cont           Voic Late
+R  Syl- Cons Sono      Ante Coro           Cont           Voic     
+Y            Sono                High      Cont           Voic     
+W            Sono                High Back Cont           Voic     
+# WH is needed because the rules use it.  Same as W until advised otherwise
+WH           Sono                High Back Cont           Voic     
+HH                                         Cont                    
+

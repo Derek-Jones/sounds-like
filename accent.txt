@@ -1,0 +1,12 @@
+#
+# accent.txt, 15 Mar 12
+#
+# Map: from to
+
+german
+W  V
+WH  V
+V  F
+TH D
+DH D
+D  T

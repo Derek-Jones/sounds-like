@@ -1,0 +1,386 @@
+#
+# eng-phon.txt, 23 Mar 12
+#  This file contains rules for the conversion of English words
+#  into phonemes.
+# Letter-to-Sound Rules for Automatic Translation of English Text
+# to Phonetics by H.S. Elovitz, R. Johnson, A. McHugh and J. E. Shore
+# IEEE Transactions on Acoustics, Speech and Signal Processing
+# Vol ASSP-4, No. 6, Dec 1976.
+#
+#  The rules have the form:
+#
+#                A[B]C=D
+#  Thus, they are specified in essentially the same way as those
+#  of Ainsworth.
+#  The rules are to read as "The character string B, occurring with
+#  left context A and right context C, gets the pronunciation D."
+#  D consists of latin-letter representations of IPA symbols.
+#  A and C are patterns and consist of strings of letters and other
+#  special symbols used to denote classes of strings as below:
+#  $ - one or more vowels
+#  ! - two or more vowels
+#  + - one front vowel
+#  : - zero or more consonants
+#  ^ - one consonant
+#  ; - one or more consonants
+#  . - one voiced consonant
+#  @ - one special consonant
+#  & - one sibilant
+#  % - one suffix
+#  The terms used in defining the meanings of the special symbols
+#  above are themselves defined as below:
+#  Vowels are             : A, E, I, O, U, Y
+#  Front vowels are       : E, I, Y
+#  Consonants are         : B, C, D, F, G, H, J, K, L, M,
+#                           N, P, Q, R, S, T, V, W, X, Z
+#  Voiced consonants are  : B, D, V, G, J, L, M, N, R, W, Z
+#  Special consonants are : T, S, R, D, L, Z, N, J, TH, CH, SH
+#  (special consonants affect sound of following U)
+#  Sibilants are          : S, C, G; Z, X, J, CH, SH
+#  Suffixes are           : ER, E, ES, ED, ING, ELY
+#  Blanks are significant and are used to identify the beginnings
+#  and ends of words.
+#    ARULE   ***
+[a] =/AX/
+ [are] =/AA R/
+ [ar]o=/AX R/
+[ar]$=/EH R/
+ ^[as]$=/EY S/
+[a]wa=/AX/
+[aw]=/AO/
+ :[any]=/EH N IY/
+[a]^+$=/EY/
+$:[ally]=/AX L IY/
+ [al]$=/AX L/
+[again]=/AX G EH N/
+$:[ag]e=/IH JH/
+[a]^+:$=/AE/
+ :[a]^+ =/EY/
+[a]^%=/EY/
+ [arr]=/AX R/
+[arr]=/AE R/
+ :[ar] =/AA R/
+[ar] =/ER/
+[ar]=/AA R/
+[air]=/EH R/
+[ai]=/EY/
+[ay]=/EY/
+[au]=/AO/
+$:[al] =/AX L/
+$:[als] =/AX L Z/
+[alk]=/AO K/
+[al]^=/AO L/
+ :[able]=/EY B AX L/
+[able]=/AX B AX L/
+[ang]+=/EY N JH/
+[a]=/AE/
+#    BRULE   ***
+ [be]^$=/B IH/
+[being]=/B IY IH NX/
+ [both] =/B OW TH/
+ [bus]$=/B IH Z/
+[buil]=/B IH L/
+[b]=/B/
+#    CRULE   ***
+ [ch]^=/K/
+^e[ch]=/K/
+[ch]=/CH/
+ s[ci]$=/S AY/
+[ci]a=/SH/
+[ci]o=/SH/
+[ci]en=/SH/
+[c]+=/S/
+[ck]=/K/
+[com]%=/K AH M/
+[c]=/K/
+#    DRULE   ***
+$:[ded] =/D IH D/
+.e[d] =/D/
+$;e[d] =/T/
+ [de]^$=/D IH/
+ [do] =/D UW/
+ [does]=/D AH Z/
+ [doing]=/D UW IH NX/
+ [dow]=/D AW/
+[du]a=/JH UW/
+[d]=/D/
+#    ERULE   ***
+$:[e] =//
+# ' ;[e] =//
+ :[e] =/IY/
+$[ed] =/D/
+$:[e]d =//
+[ev]er=/EH V/
+[e]^%=/IY/
+[eri]$=/IY R IY/
+[eri]=/EH R IH/
+$:[er]$=/ER/
+[er]$=/EH R/
+[er]=/ER/
+ [even]=/IY V EH N/
+$:[e]w=//
+@[ew]=/UW/
+[ew]=/Y UW/
+[e]o=/IY/
+$:&[es] =/IH Z/
+$:[e]s =//
+$:[ely] =/L IY/
+$:[ement]=/M EH N T/
+[eful]=/F UH L/
+[ee]=/IY/
+[earn]=/ER N/
+ [ear]^=/ER/
+[ead]=/EH D/
+$:[ea] =/IY AX/
+[ea]su=/EH/
+[ea]=/IY/
+[eigh]=/EY/
+[ei]=/IY/
+ [eye]=/AY/
+[ey]=/IY/
+[eu]=/Y UW/
+[e]=/EH/
+#    FRULE   ***
+[ful]=/F UH L/
+[f]=/F/
+#    GRULE   ***
+[giv]=/G IH V/
+ [g]i^=/G/
+[ge]t=/G EH/
+su[gges]=/G JH EH S/
+[gg]=/G/
+ b$[g]=/G/
+[g]+=/JH/
+[great]=/G R EY T/
+$[gh]=//
+[g]=/G/
+# DJ rule
+# [g]n=//
+#    HRULE   ***
+ [hav]=/HH AE V/
+ [here]=/HH IY R/
+ [hour]=/AW ER/
+[how]=/HH AW/
+[h]$=/HH/
+[h]=//
+#    IRULE   ***
+ [in]=/IH N/
+ [i] =/AY/
+[in]d=/AY N/
+[ier]=/IY ER/
+$:r[ied] =/IY D/
+[ied] =/AY D/
+[ien]=/IY EH N/
+[ie]t=/AY EH/
+ :[i]%=/AY/
+[i]%=/IY/
+[ie]=/IY/
+[i]^+:$=/IH/
+[ir]$=/AY R/
+[iz]%=/AY Z/
+[is]%=/AY Z/
+[i]d%=/AY/
++^[i]^+=/IH/
+[i]t%=/AY/
+$;[i]^+=/IH/
+[i]^+=/AY/
+[ir]=/ER/
+[igh]=/AY/
+[ild]=/AY L D/
+[ign] =/AY N/
+[ign]^=/AY N/
+[ign]%=/AY N/
+[ique]=/IY K/
+[i]=/IH/
+#    JRULE   ***
+[j]=/JH/
+#    KRULE   ***
+ [k]n=//
+[k]=/K/
+#    LRULE   ***
+[lo]c$=/L OW/
+l[l]=//
+$;[l]%=/AX L/
+[lead]=/L IY D/
+[l]=/L/
+#    MRULE   ***
+[mov]=/M UW V/
+[m]=/M/
+# DJ rule
+# [m]n=//
+#    NRULE   ***
+e[ng]+=/N JH/
+[ng]r=/NX G/
+[ng]$=/NX G/
+[ngl]%=/NX G AX L/
+[ng]=/NX/
+[nk]=/NX K/
+ [now] =/N AW/
+[n]=/N/
+#    ORULE   ***
+[of] =/AX V/
+[orough]=/ER OW/
+$:[or] =/ER/
+$:[ors] =/ER Z/
+[or]=/AO R/
+ [one]=/W AH N/
+[ow]=/OW/
+ [over]=/OW V ER/
+[ov]=/AH V/
+[o]^%=/OW/
+[o]^en=/OW/
+[o]^i$=/OW/
+[ol]d=/OW L/
+[ought]=/AO T/
+[ough]=/AH F/
+ [ou]=/AW/
+h[ou]s$=/AW/
+[ous]=/AX S/
+[our]=/AO R/
+[ould]=/UH D/
+# Paper contains | [ou]^l=/AH/|, TR makes more sense using the following
+^[ou]^l=/AH/
+[oup]=/UW P/
+[ou]=/AW/
+[oy]=/OY/
+[oing]=/OW IH NX/
+[oi]=/OY/
+[oor]=/AO R/
+[ook]=/UH K/
+[ood]=/UH D/
+[oo]=/UW/
+[o]e=/OW/
+[o] =/OW/
+[oa]=/OW/
+ [only]=/OW N L IY/
+ [once]=/W AH N S/
+[on't]=/OW N T/
+c[o]n=/AA/
+[o]ng=/AO/
+ ;[o]n=/AH/
+i[on]=/AX N/
+$:[on] =/AX N/
+$^[on]=/AX N/
+[o]st =/OW/
+[of]^=/AO F/
+[other]=/AH DH ER/
+[oss] =/AO S/
+$;[om]=/AH M/
+[o]=/AA/
+#    PRULE   ***
+[ph]=/F/
+[peop]=/P IY P/
+[pow]=/P AW/
+[put] =/P UH T/
+[p]=/P/
+# DJ rule
+# [p]s=//
+# [p]t=//
+#    QRULE   ***
+[quar]=/K W AO R/
+[qu]=/K W/
+[q]=/K/
+#    RRULE   ***
+ [re]^$=/R IY/
+[r]=/R/
+#    SRULE   ***
+[sh]=/SH/
+$[sion]=/ZH AX N/
+[some]=/S AH M/
+$[sur]$=/ZH ER/
+[sur]$=/SH ER/
+$[su]$=/ZH UW/
+$[ssu]$=/SH UW/
+$[sed] =/Z D/
+$[s]$=/Z/
+[said]=/S EH D/
+^[sion]=/SH AX N/
+[s]s=//
+.[s] =/Z/
+$:.e[s] =/Z/
+$;![s] =/Z/
+$;$[s] =/S/
+u[s] =/S/
+ :$[s] =/Z/
+ [sch]=/S K/
+[s]c+=//
+$[sm]=/Z M/
+# $[sn]'=/Z AX N/
+[s]=/S/
+#    TRULE   ***
+ [the] =/DH AX/
+[to] =/T UW/
+[that] =/DH AE T/
+ [this] =/DH IH S/
+ [they]=/DH EY/
+ [there]=/DH EH R/
+[ther]=/DH ER/
+[their]=/DH EH R/
+ [than] =/DH AE N/
+ [them] =/DH EH M/
+[these] =/DH IY Z/
+ [then]=/DH EH N/
+[through]=/TH R UW/
+[those]=/DH OW Z/
+[though] =/DH OW/
+ [thus]=/DH AH S/
+[th]=/TH/
+$:[ted] =/T IH D/
+s[ti]$n=/CH/
+[ti]o=/SH/
+[ti]a=/SH/
+[tien]=/SH AX N/
+[tur]$=/CH ER/
+[tu]a=/CH UW/
+ [two]=/T UW/
+# DJ rule
+# s[t]l=//
+[t]=/T/
+#    URULE   ***
+ [un]i=/Y UW N/
+ [un]=/AH N/
+ [upon]=/AX P AO N/
+@[ur]$=/UH R/
+[ur]$=/Y UH R/
+[ur]=/ER/
+[u]^ =/AH/
+[u]^^=/AH/
+[uy]=/AY/
+ g[u]$=//
+g[u]%=//
+g[u]$=/W/
+$n[u]=/Y UW/
+@[u]=/UW/
+[u]=/Y UW/
+#    VRULE   ***
+[view]=/V Y UW/
+[v]=/V/
+#    WRULE   ***
+ [were]=/W ER/
+[wa]s=/W AA/
+[wa]t=/W AA/
+[where]=/WH EH R/
+[what]=/WH AA T/
+[whol]=/HH OW L/
+[who]=/HH UW/
+[wh]=/WH/
+[war]=/W AO R/
+[wor]^=/W ER/
+[wr]=/R/
+[w]=/W/
+#    XRULE   ***
+[x]=/K S/
+#    YRULE   ***
+[young]=/Y AH NX/
+ [you]=/Y UW/
+ [yes]=/Y EH S/
+ [y]=/Y/
+$;[y] =/IY/
+$;[y]i=/IY/
+ :[y] =/AY/
+ :[y]$=/AY/
+ :[y]^+:$=/IH/
+ :[y]^$=/AY/
+[y]=/IH/
+#    ZRULE   ***
+[z]=/Z/

@@ -1,0 +1,37 @@
+
+28 Mar 2012 Derek M. Jones, <derek@knosof.co.uk>
+
+	Release 0.1.3
+
+27 Mar 2012 Derek M. Jones, <derek@knosof.co.uk>
+
+	Added -filter option
+	Added -phoneme option
+
+23 Mar 2012 Derek M. Jones, <derek@knosof.co.uk>
+
+	Fixed typos in eng-phon.txt
+
+
+21 Mar 2012 Derek M. Jones, <derek@knosof.co.uk>
+
+	Release 0.1.2
+	Made the Brinton distictive feature map the default
+	Added -config option
+	Fixed bug that prevented AY ever being displayed
+	Fixed various loop off by one errors
+	Fixed indexing errors in init_sounds_like
+
+
+17 Mar 2012 Derek M. Jones, <derek@knosof.co.uk>
+
+	Release 0.1.1
+	Added -print options
+	Added -rythm option
+
+
+16 Mar 2012 Derek M. Jones, <derek@knosof.co.uk>
+
+	Release 0.1.0
+	First release
+

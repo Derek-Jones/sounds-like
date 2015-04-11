@@ -1,0 +1,24 @@
+
+TODO 27 Mar 2012
+
+1. Switch to using pcre_dfa_exec to do exhaustive search on
+phoneme to letter conversion
+
+2. Letter check rules for the end of a word
+
+3. Support for non-English languages
+
+4. Better letter/phoneme mapping rules
+
+5. Sounds like to filer on phoneme bigram frequencies
+
+6. Weighting of features in sounds-like mutation operation
+
+7. Able to generate silent letters
+
+8. Filter sounds-like phoneme changes using OCP rules
+
+9. Filter on existing English phoneme usage patterns listed in Gimson
+
+10. Modify sequence based on phoneme confusion matrix data
+
