@@ -61,7 +61,7 @@ void word_to_phon(void)
 print_phon_seq=FALSE;
 
 mapped_phon_seq=let2phon(word_str, TRUE);
-printf("%s\n", mapped_phon_seq);
+printf("%s\n", mapped_phon_seq.phon_list);
 }
 
 
